@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animatia</title>
+    <style>
+            body{ 
+                margin: 0px;
+            }
+                .p_common{ 
+                    width: 278px;
+                    height: 212px;
+
+                }
+                .p_box{ 
+                  
+                    background-color:#000;
+                    margin:  250px auto;
+                   
+                    background-image: url("img/4.jpg");
+                    background-size: cover;
+                    position: relative;
+                  
+                    
+                }
+                .p_blackbox{ 
+                    top: 0px;
+                    left: 0px;
+                    color: #fff;
+                    padding: 20px;
+                         background-color: black;
+                        position: absolute; 
+                        transition: all 1s linear; 
+                    transform: perspective(200px) rotateY(0deg);
+                }
+                .p_box:hover .p_blackbox{ 
+                    transform: perspective(200px) rotateY(-90deg);
+                }
+    
+    </style>
+</head>
+<body>
+        <div class="p_box p_common">
+            <div class="p_blackbox p_common">
+                Lorem Ipsum
+                Integer sollicitudin lacus libero, in iaculis turpis tristique sit amet. Nullam augue elit, feugiat nec arcu eget, sodales feugiat ligula.
+            </div>
+        </div>
+</body>
+</html>
